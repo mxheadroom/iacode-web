@@ -1,0 +1,5 @@
+---
+# tasks file for web-git-co
+- git:
+    repo: ssh://github.com/mxheadroom/iacode-web.git
+    dest: /var/www-data/html

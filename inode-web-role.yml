@@ -1,0 +1,23 @@
+---
+
+# common
+- hosts: all
+  sudo: yes
+  gather_facts: no
+
+  roles:
+    - common
+
+# web
+- hosts: tag_Name_iacode_webserver
+  sudo: yes
+
+  roles:
+    - web
+
+# git deploy website
+- hosts: tag_Name_iacode_webserver
+  sudo: yes
+
+  roles:
+    - git-web-co
